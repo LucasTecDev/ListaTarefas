@@ -1,1 +1,1 @@
-https://www.youtube.com/watch?v=jDQQM1RfjNc parei na 20:30
+

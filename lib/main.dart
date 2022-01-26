@@ -1,12 +1,15 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:flutter/material.dart';
+import 'package:lista_tarefas/pages/Notifications.dart';
+import 'package:lista_tarefas/pages/about.dart';
 import 'package:lista_tarefas/headrawer.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:lista_tarefas/privacidad_privade.dart';
-import 'package:lista_tarefas/dashbord.dart';
-import 'dashbord.dart';
-import 'privacidad_privade.dart';
+import 'package:lista_tarefas/pages/privacidad_privade.dart';
+import 'package:lista_tarefas/listTile.dart';
+import 'package:lista_tarefas/listTile.dart';
+import 'listTile.dart';
+import 'pages/privacidad_privade.dart';
 
 void main() {
   runApp(AppLista());
@@ -83,6 +86,15 @@ class _HomePageState extends State<HomePage> {
             child: Column(
               children: [
                  MyHeaderDrawer(),
+                CustomListTile(Icons.person,'Sobre', ()=>{
+                  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => AboutPage()))
+                }),
+                CustomListTile(Icons.privacy_tip,'Privacidade', ()=> {
+                  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => PrivacyPolicyPage()))
+                }),
+                CustomListTile(Icons.notifications,'Notificação', ()=>{
+                  Navigator.push(context, MaterialPageRoute(builder: (BuildContext context) => Notifications()))
+                }),
               ],
             ),
           ),
@@ -129,7 +141,6 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-
   Widget buildItem(context, index) {
     return Dismissible(
       key: Key(DateTime.now().millisecondsSinceEpoch.toString()),

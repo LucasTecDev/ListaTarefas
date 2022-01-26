@@ -47,7 +47,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Lu
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] C:\Users\Lucas\.gradle\caches\transforms-1\files-1.1\core-1.6.0.aar\8613c7a6650a502879967ce5ce757f49\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\Lucas\Documents\substituta\lista_tarefas\android\app\src\main\AndroidManifest.xml:10:9-38
+		ADDED from C:\Users\Lucas\Documents\substituta\lista_tarefas\android\app\src\main\AndroidManifest.xml:10:9-33
 	android:icon
 		ADDED from C:\Users\Lucas\Documents\substituta\lista_tarefas\android\app\src\main\AndroidManifest.xml:11:9-43
 activity#com.example.lista_tarefas.MainActivity
